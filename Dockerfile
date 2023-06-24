@@ -2,7 +2,7 @@
 FROM node:18-alpine
 
 #environment used for development
-ENV NODE_ENV testing
+ENV NODE_ENV production
 
 # Set the working directory inside the container
 RUN mkdir -p /expressjs-wealpy
