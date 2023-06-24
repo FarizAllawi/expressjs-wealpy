@@ -4,5 +4,5 @@
 
 # dependencies
 /node_modules
-#Dockerfile
+Dockerfile
 .env
