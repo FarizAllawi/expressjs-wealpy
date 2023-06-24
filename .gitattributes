@@ -1,2 +1,2 @@
-Dockerfile
-docker-compose.yml
+Dockerfile merge=ours
+docker-compose.yml merge=ours
