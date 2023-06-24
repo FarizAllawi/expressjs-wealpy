@@ -41,8 +41,8 @@ jobs:
         id: deploy
         uses: google-github-actions/deploy-cloudrun@v0
         with:
-          service: env["SERVICE_${{ steps.determine_env.outputs.env }}"]
-          region: env["REGION_${{ steps.determine_env.outputs.env }}"]
+          service: ${{ env["SERVICE_${{ steps.determine_env.outputs.env }}"] }}
+          region: ${{ env["REGION_${{ steps.determine_env.outputs.env }}"] }}
           # NOTE: If required, update to the appropriate source folder
           source: ./
 
