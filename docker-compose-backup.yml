@@ -1,0 +1,31 @@
+services:
+  database_wealpy:
+    container_name: database_wealpy
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=${DB_NAME}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    restart: always
+    volumes:
+      - database_wealpy_data:/var/lib/postgresql/data
+
+  expressjs_wealpy:
+    container_name: expressjs_wealpy
+    build: .
+    image: expressjs-wealpy:1.9.0
+    ports:
+      - "80:80"
+    environment:
+      - DB_NAME=${DB_NAME}
+      - DB_USERNAME=${DB_USERNAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_HOST=database_wealpy
+    depends_on:
+      - database_wealpy
+    restart: always
+
+volumes:
+  database_wealpy_data: {}

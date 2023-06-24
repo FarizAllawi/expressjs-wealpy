@@ -1,0 +1,8 @@
+services:
+  expressjs_wealpy:
+    container_name: expressjs_wealpy
+    build: .
+    image: expressjs-wealpy:1.9.0
+    ports:
+      - "80:80"
+    restart: always

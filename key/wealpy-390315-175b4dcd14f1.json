@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "wealpy-390315",
+  "private_key_id": "175b4dcd14f1f32ab7c301fc2242f6367aa4d086",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC35rj2lDTxAMfO\nW1Bj9r1nQm7wHXN6HvrSjKYGwNna+9iNaE7yUBjg0znswX+db3AwKCWZfKM5Be7r\nnhvnp8YqXD+5QTqd5VnUEQ/CU5EksckcjCVyh54Uw2+yqWX22RbJupKVbsmC5YOd\nEIigu3fYfq6nE4F/Uu89WG35ZjGBqPdU/+PHmnGdUWFX7RMr7X82uEOOCTWBWSEM\nMUpBluQvGQvUZRd0YmbcFqRsCZYVSi5PDDeIYjwxCf104ZMCo02Hgv19XYTy5unF\nroMS196XV0KCuwq4agtTCnObDIG32UrdSfx54wPb2rp2y1sO1K9HlDEKbWsWbuM6\nZn6G8kwxAgMBAAECggEACwvjQB+AqxnXhqoWQvztHVzgllCEkVk3SoqrheQTafuf\nA0Z42IYOaoHRnMq2OE4bdG8S7BxwHwKf2nwXs8NwjDaYls+H3nhqfAou0sbLhQNf\nX9U8whuKl7dyGA6kGu7pFyK7f5mlJdVUwaxesp30KddZNRy/NndUOtB7IaQddOrn\n4L8ptoxy6sEwJjPZckcCXfNC1IQX+rDlnV3zxkr5VjeHUdS4O6HLviVw/CMr/C9j\nkAN9mstMG5kdBts6PfBUbXaYMYpc12GTC0XPnTFnOzJaJ/jKOBKL02ufReLucfo+\nYXSZesWrMSf5kmQE1++N8WxOfi1GsJ6bvYFDQuGdiQKBgQDjlPjAt0wxhGuRLcte\nNI8toiQ9v5wqHpzyBy78+9McPKy31rOoVehykPLKybwwwcAHz52sWs4yhNTAUluC\nRG9ByWmOG0rLnCpJvL9N5OJobAzJGwB3TQtd84jTZDRLJ9XRQlyY/mWr2eB6vw/G\nUjlG1M0ynOx5z6nUyqa22gJrqQKBgQDO3W1TnIAhgOYUWyHRs5Gu6N+ifK3+awKX\ndRWbTRStr8rGLVdtjTzG6gvBiP7Oi+vG/ab3ThE6P79UqVsMsTFMhKKwCfH9KGAs\nUskn9jwfOaYpCgYMIf2BELFnBP5hcJE3w+n4eaaoGIg+eYA96oRYq/zeaurgnoRT\n7BQsClxxSQKBgFHejX4Gcop9sJSRfM9u6PLpmU/9Vhhw2tTWcLjhfphx21BnFEpC\nXVSZgD4jRGfly0cEERynrfXOgxqMhg7ev4dTBX3xo36Lt0q/c7J53FjkRdUyuYAx\nXx11NouVSJqgwfJ9hQIkwj6IKpD9mpcljSVF+Gt0uD05z0aVgFPXKXfBAoGBAMej\nyq62irHKxEFA8hJ/SkmTVMBrsz+l5opk5MVMTniQ/xDjEU0Y0V7m4RGWNNMBFjqk\n8U4aeWXNv8jk6IoHN5yxJJDgCDpZjPc5rghzCvLXoBRbKBrtcsnsYkkZ+KXxDTTU\nTikOvlfb1SD2AV2/xpoM4a2FYcgFM5AKdi1KkoyBAoGBAJz5BvNjHfS9fyUS0M3/\nuBw9AO8ibxvqKLzBuL5phyyQMyqUD81BKkR+W2/v+P04LHvlHgEU8ZG751oyv5bb\nY/0op7GImUdJTag5S1SkccEUL1v9sQRm6sniMKWtnbMSqaw56J1Oy8boAmZuGlSo\nmVYrN99vZ5qyn07Q02tfEM2E\n-----END PRIVATE KEY-----\n",
+  "client_email": "wealpy-service-account@wealpy-390315.iam.gserviceaccount.com",
+  "client_id": "100322605314805855304",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wealpy-service-account%40wealpy-390315.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
