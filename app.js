@@ -60,4 +60,5 @@ app.use('/v1/media', mediaRouter);
 // app.use('/v1/promotion', promotionRouter);
 // app.use('/v1/webhook', webhookRouter);
 
+app.listen(3000);
 module.exports = app;
