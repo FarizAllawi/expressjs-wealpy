@@ -35,7 +35,7 @@ jobs:
           
       - name: Determine Environment
         id: determine_env
-        run: echo "::set-output name=env::${{ github.ref == 'refs/heads/develop' && 'development' || 'production' }}"
+        run: echo "::set-output name=env::${{ github.ref == 'refs/heads/develop' && 'DEVELOPMENT' || 'PRODUCTION' }}"
 
       - name: Deploy to Cloud Run
         id: deploy
