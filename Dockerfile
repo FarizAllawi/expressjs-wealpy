@@ -21,7 +21,7 @@ RUN npm install
 RUN npm install pm2 -g
 
 # Start the Next.js server
-CMD pm2-runtime start ecosystem.config.js --env=production
+CMD pm2-runtime start ecosystem.config.js --env=testing
 
 # Expose the container port (change the port number if necessary)
 EXPOSE 3000
