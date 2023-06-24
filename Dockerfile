@@ -24,6 +24,6 @@ RUN npm install pm2 -g
 CMD pm2-runtime start ecosystem.config.js --env=testing
 
 # Expose the container port (change the port number if necessary)
-EXPOSE 8080
+EXPOSE 3000
 
 
