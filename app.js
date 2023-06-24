@@ -17,15 +17,16 @@ const promotionRouter = require('./routes/V1/Promotion');
 const userRouter = require('./routes/V1/User');
 const webhookRouter = require('./routes/V1/Webhook');
 
-const https = require('https')
-const http = require('http')
+// const https = require('https')
+// const http = require('http')
+
 const app = express()
 
-http.createServer(app).listen(80)
-// https.createServer({
-//   key: fs.readFileSync('/path/to/private.key'),       // Replace with the path to your private key file
-//   cert: fs.readFileSync('/path/to/certificate.crt'),
-// }, app).listen(443)
+// http.createServer(app).listen(80)
+// // https.createServer({
+// //   key: fs.readFileSync('/path/to/private.key'),       // Replace with the path to your private key file
+// //   cert: fs.readFileSync('/path/to/certificate.crt'),
+// // }, app).listen(443)
 
 const whitelist = [
   process.env.FRONTEND_URL,
