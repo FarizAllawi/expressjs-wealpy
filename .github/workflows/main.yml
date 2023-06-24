@@ -1,0 +1,51 @@
+name: Deploy to Cloud Run from Source
+
+on:
+  push:
+    branches:
+      -main
+      -develop
+      
+env:
+  PROJECT_ID: wealpy-390315 # TODO: update Google Cloud project id
+  SERVICE_PRODUCTION: production-expressjs-wealpy
+  SERVICE_DEVELOPMENT: development-expressjs-wealpy
+  REGION_PRODUCTION: asia-southeast1  # TODO: update Cloud Run service region
+  REGION_DEVELOPMENT: asia-southeast1
+  
+jobs:
+  deploy:
+    # Add 'id-token' with the intended permissions for workload identity federation
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+
+#       NOTE: Alternative option - authentication via credentials json
+      - name: Google Auth
+        id: auth
+        uses: 'google-github-actions/auth@v0'
+        with:
+          credentials_json: '${{ secrets.GCP_CREDENTIALS }}'
+          
+      - name: Determine Environment
+        id: determine_env
+        run: echo "::set-output name=env::${{ github.ref == 'refs/heads/develop' && 'development' || 'production' }}"
+
+      - name: Deploy to Cloud Run
+        id: deploy
+        uses: google-github-actions/deploy-cloudrun@v0
+        with:
+          service: ${{ env["SERVICE_" + steps.determine_env.outputs.env.toUpperCase()] }}
+          region: ${{ env["REGION_" + steps.determine_env.outputs.env.toUpperCase()] }}
+          # NOTE: If required, update to the appropriate source folder
+          source: ./
+
+      # If required, use the Cloud Run url output in later steps
+      - name: Show Output
+        run: echo ${{ steps.deploy.outputs.url }}
