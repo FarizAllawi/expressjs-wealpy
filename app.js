@@ -29,7 +29,7 @@ const app = express()
 // // }, app).listen(443)
 
 const whitelist = [
-  process.env.FRONTEND_URL,
+  // process.env.FRONTEND_URL,
 ]
 const corsOptionsDelegate = function (req, callback) {
   let corsOptions;
